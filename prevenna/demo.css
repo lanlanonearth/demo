@@ -74,7 +74,7 @@ section {
     stroke-linecap: square;
     stroke-miterlimit: 10;
     stroke-width: 4.49px;
-    animation-name: stroke-animation;
+    animation-name: stroke-animation, stroke-scale;
   stroke-dashoffset: 0.1%;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -95,8 +95,15 @@ section {
     stroke-dasharray: 0% 100%;
     opacity: 0;
   }
-  /* 100% {
-    stroke-dasharray: 0% 100%;
-    opacity: 0; */
+}
+
+@keyframes stroke-scale {
+  0% {stroke-width: 1px;
+  }
+  50% {
+    stroke-width: 4.49px;
+  }
+  100% {
+    stroke-width: 1px;
   }
 }
