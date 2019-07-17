@@ -69,6 +69,7 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+  -webkit-animation-name: gradient-float;
   animation-name: gradient-float;
 stroke-dashoffset: 0.1%;
 animation-duration: 5s;
@@ -79,7 +80,11 @@ animation-iteration-count: infinite;
   padding: 15vmin;
 }
 
-
+@-webkit-keyframes gradient-float {
+    0%{background-position:10% 0%}
+    50%{background-position:100% 100%}
+    100%{background-position:10% 0%}
+}
 
 @keyframes gradient-float {
     0%{background-position:10% 0%}
