@@ -237,7 +237,7 @@ svg {
   animation-timing-function: linear;
   transform-origin: 98.272px 61.631px;
   animation-fill-mode: forwards;
-  animation-delay: 5s;
+  animation-delay: 5.5s;
 }
 
 #techhard-logo {
@@ -246,5 +246,5 @@ svg {
   animation-iteration-count: 1;
   animation-timing-function: linear;
   animation-fill-mode: both;
-  animation-delay: 6s;
+  animation-delay: 7s;
 }
