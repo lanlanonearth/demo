@@ -1,12 +1,8 @@
-
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-/* svg */
 
 svg {
   width: 100%;
@@ -14,67 +10,32 @@ svg {
 }
 
 .global-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 0 auto;
-}
-
-
-article {
-  width: 100%;
-  display: flex;
-}
-
-section {
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  background-color: #ffffff;
 }
 
-
-.biodynamicfarming {
-  background-color: #FFFFF;
-}
-
-
-/* special elements */
-
-.card-container {
-  width: 60vmin;
-  height: 60vmin;
+.demo-container {
+  width: 50vmin;
+  height: 50vmin;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
 }
 
-.card-container2 {
-  width: 40vmin;
-  height: 40vmin;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-}
-
-.card-item-icon {
-  padding: 15vmin;
-}
-
-
-  .logo-line {
-    fill: none;
-    stroke: url(#linear);
-    stroke-linecap: square;
-    stroke-miterlimit: 10;
-    stroke-width: 4.49px;
-    animation-name: stroke-animation, stroke-scale;
+.prevenna-logo-line {
+  fill: none;
+  stroke: url(#prevenna-line-gradient);
+  stroke-linecap: square;
+  stroke-miterlimit: 10;
+  stroke-width: 4.49px;
+  animation-name: prevenna-line-draw, prevenna-line-scale;
   stroke-dashoffset: 0.1%;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -82,7 +43,7 @@ section {
   animation-fill-mode: backwards;
 }
 
-@keyframes stroke-animation {
+@keyframes prevenna-line-draw {
   0% {
     stroke-dasharray: 0% 100%;
     opacity: 0;
@@ -97,7 +58,7 @@ section {
   }
 }
 
-@keyframes stroke-scale {
+@keyframes prevenna-line-scale {
   0% {stroke-width: 1px;
   }
   50% {

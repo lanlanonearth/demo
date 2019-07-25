@@ -35,7 +35,7 @@ svg {
   align-content: center;
 }
 
-@keyframes squiggle-animation {
+@keyframes noname01-squiggle-reveal {
   0% {
     stroke-dashoffset: 220px;
   }
@@ -47,7 +47,7 @@ svg {
       }
   }
 
-  @keyframes line-animation {
+  @keyframes noname01-line-reveal {
     0% {
       stroke-dashoffset: 220px;
     }
@@ -59,7 +59,7 @@ svg {
       }
     }
 
-#squiggle, #line {
+#noname01-squiggle, #noname01-line {
           fill: none;
           stroke: #000000;
           stroke-linecap: round;
@@ -70,18 +70,18 @@ svg {
           stroke-dashoffset: 220;
         }
 
-#squiggle {
-          animation-name: squiggle-animation;
+#noname01-squiggle {
+          animation-name:  noname01-squiggle-reveal;
           animation-duration: 3s;
           animation-iteration-count: 1;
           animation-timing-function: ease-out;
           animation-fill-mode: forwards;
           }
 
-          #line {
-                    animation-name: line-animation;
-                    animation-duration: 3s;
-                    animation-iteration-count: 1;
-                    animation-timing-function: ease-out;
-                    animation-fill-mode: forwards;
-                    }
+#noname01-line {
+          animation-name: noname01-line-reveal;
+          animation-duration: 3s;
+          animation-iteration-count: 1;
+          animation-timing-function: ease-out;
+          animation-fill-mode: forwards;
+          }
