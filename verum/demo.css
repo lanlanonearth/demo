@@ -23,8 +23,10 @@ svg {
 }
     .demo-container {
       transform: translateZ(0);
-      background: linear-gradient(to right, #f32170, #ffeb07, #2196f3, #ff00eb);
-      background-size: 300%;
+      background-image: url("gradient.gif");
+      background-position: center;
+      /* background: linear-gradient(to right, #f32170, #ffeb07, #2196f3, #ff00eb); */
+      background-size: 100%;
       -webkit-clip-path: url(#myClip);
       clip-path: url(#myClip);
       width: 53.5vmin;
@@ -33,11 +35,11 @@ svg {
       flex-wrap: wrap;
       justify-content: center;
       align-content: center;
-      -webkit-animation-name: gradient-float;
+      /* -webkit-animation-name: gradient-float;
       animation-name: gradient-float;
     stroke-dashoffset: 0.1%;
     animation-duration: 5s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
     }
 
 @-webkit-keyframes gradient-float {
@@ -47,7 +49,11 @@ svg {
 }
 
 @keyframes gradient-float {
-    0%{background-position:10% 0%}
+    0%{
+      background-position:10% 0%
+    }
     50%{background-position:100% 100%}
-    100%{background-position:10% 0%}
+    100%{
+      background-position:10% 0%
+    }
 }
