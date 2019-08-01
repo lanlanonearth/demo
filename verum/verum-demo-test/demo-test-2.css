@@ -9,7 +9,6 @@
 svg {
   width: 100%;
   height: 100%;
-  border: 1px solid red;
 }
 
 .global-container {
@@ -23,25 +22,24 @@ svg {
   background-color: #FFFFF;
 }
     .demo-container {
-      border: 1px solid red;
       transform: translateZ(0);
-      background-image: url("gradient.gif");
       background-position: center;
       /* background: linear-gradient(to right, #f32170, #ffeb07, #2196f3, #ff00eb); */
       background-size: 100%;
       -webkit-clip-path: url(#myClip);
       clip-path: url(#myClip);
-      width: 53.5vmin;
-      height: 10vmin;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-content: center;
       /* -webkit-animation-name: gradient-float;
       animation-name: gradient-float;
     stroke-dashoffset: 0.1%;
     animation-duration: 5s;
     animation-iteration-count: infinite; */
+    }
+
+    .demo-container::after {
+      content: "";
+      background-image: url("gradient.gif");
+
+      background-size: 100%;
     }
 
 @-webkit-keyframes gradient-float {
