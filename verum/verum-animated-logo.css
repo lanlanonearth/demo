@@ -1,0 +1,132 @@
+:root {
+  /* Speed Control */
+  --animation-speed: 4s;
+  /* Color Control
+  The gradient behind the logo mask is made with
+  a color wheel containing 12 wave form slices. */
+  --verum-logo-color-slice-1: #ffff00;     /* Yellow Green */
+  --verum-logo-color-slice-2: #80ff00;  /* Green */
+  --verum-logo-color-slice-3: #00ff00;  /* Blue Green */
+  --verum-logo-color-slice-4: #00ff80;  /* Blue */
+  --verum-logo-color-slice-5: #00ffff;  /* Blue Violet */
+  --verum-logo-color-slice-6: #0080ff;  /* Violet */
+  --verum-logo-color-slice-7: #0000ff;  /* Red Violet */
+  --verum-logo-color-slice-8: #8000ff;  /* Red */
+  --verum-logo-color-slice-9: #ff00ff;  /* Red Orange */
+  --verum-logo-color-slice-10: #ff0080; /* Orange */
+  --verum-logo-color-slice-11: #ff0000; /* Yellow Orange */
+  --verum-logo-color-slice-12: #ff8000; /* Yellow */
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.svg {
+  width: 100%;
+  height: 100%;
+}
+
+.fullscreen-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #FFFFF;
+}
+
+.verum-logo-demo-container {
+  width: 100vmin;
+  height: 19vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.verum-logo-mask {
+  transform: translateZ(0);
+	display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  -webkit-clip-path: url(#verum-logo-clip);
+  clip-path: url(#verum-logo-clip);
+}
+
+.verum-logo-gradient {
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg)}
+  0% { transform: rotate(360deg)}
+}
+
+#verum-logo-gradient {
+  animation: rotate;
+  animation-duration: var(--animation-speed);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+}
+
+.verum-logo-color-slice-1 {
+ fill: var(--verum-logo-color-slice-1);
+}
+
+.verum-logo-color-slice-2 {
+ fill: var(--verum-logo-color-slice-2);
+}
+
+.verum-logo-color-slice-3 {
+ fill: var(--verum-logo-color-slice-3);
+}
+
+.verum-logo-color-slice-4 {
+ fill: var(--verum-logo-color-slice-4);
+}
+
+.verum-logo-color-slice-5 {
+ fill: var(--verum-logo-color-slice-5);
+}
+
+.verum-logo-color-slice-6 {
+ fill: var(--verum-logo-color-slice-6);
+}
+
+.verum-logo-color-slice-7 {
+ fill: var(--verum-logo-color-slice-7);
+}
+
+.verum-logo-color-slice-8 {
+ fill: var(--verum-logo-color-slice-8);
+}
+
+.verum-logo-color-slice-9 {
+ fill: var(--verum-logo-color-slice-9);
+}
+
+.verum-logo-color-slice-10 {
+ fill: var(--verum-logo-color-slice-10);
+}
+
+.verum-logo-color-slice-11 {
+ fill: var(--verum-logo-color-slice-11);
+}
+
+.verum-logo-color-slice-12 {
+ fill: var(--verum-logo-color-slice-12);
+}
